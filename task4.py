@@ -1,6 +1,6 @@
 n = int(input())
-x = int(input())
-y = int(input())
+x = input()
+y = input()
 answer = 0
 
 
@@ -8,11 +8,11 @@ def check(number, x, y):
     global answer
     num_set = set(str(number))
     if len(num_set) == 1:
-        if str(x) in num_set or str(y) in num_set:
+        if x in num_set or y in num_set:
             answer += 1
         return
     if len(num_set) == 2:
-        if str(x) in num_set and str(y) in num_set:
+        if x in num_set and y in num_set:
             answer += 1
 
 
